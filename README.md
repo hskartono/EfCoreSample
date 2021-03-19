@@ -1,4 +1,4 @@
-# EfCoreSample
+# EF Core Sample
 Contoh penggunaan entity framework menggunakan localdb (Sql Server).
 
 Contoh yang ada saat ini:
