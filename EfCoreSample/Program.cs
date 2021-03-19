@@ -184,8 +184,8 @@ namespace EfCoreSample
 				}
 
 				var query = context.PurchaseOrders.Where(e => e.PurchaseOrderDetails.Any(
-					// d=>d.ItemPart.PartNumber.Contains(partNumbers[0]) || d.ItemPart.PartNumber.Contains(partNumbers[1])
-					predicatePart.Compile()
+					d=>d.ItemPart.PartNumber.Contains(partNumbers[0]) || d.ItemPart.PartNumber.Contains(partNumbers[1])
+					// predicatePart.Compile()
 					)
 				);
 				datas = query.ToList();
